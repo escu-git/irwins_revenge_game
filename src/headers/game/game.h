@@ -15,11 +15,13 @@ void game(){
 #pragma endregion
 
 #pragma region VARIABLES_JUGADORES
+//DATOS JUGADORES:
     int JUGADORES = 2;
-    //DATOS JUGADORES:
     int player1=1, player2=2,
+    //Turnos
+    int first_move =1, second_move=2;
     //Se inicializa el puntaje de cada jugador en 0.
-    player1_score, player2_score;
+    int player1_score, player2_score;
     //Se solicita nombre a cada jugador:
     string player1_name = get_player_name(player1), player2_name= get_player_name(player2);
 #pragma endregion
@@ -61,10 +63,10 @@ void game(){
     selected_estatuilla_player1 = seleccionarEstatuilla(player1, player1_name, ESTATUILLAS);
     selected_estatuilla_player2 = seleccionarEstatuilla(player2, player2_name, ESTATUILLAS);
 
+    //Mostramos jugadores y las estatuillas seleccionadas:
     string mensaje1 = player1_name +" (" + selected_estatuilla_player1+") - ";
     string mensaje2 = player2_name +" (" + selected_estatuilla_player2+")";
-
-    mostrarMensajeYLimpiar(mensaje1+mensaje2);
+    showMessageAndClear(0, mensaje1+mensaje2);
 
 //ENFRENTAMIENTO POR ESTATUILLAS:
     

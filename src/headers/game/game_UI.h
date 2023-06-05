@@ -25,11 +25,19 @@ void basicGameInfo(string player1, string player2){
     cout << "________________________________________________________________" <<endl <<endl;
 }
 
-void mostrarMensajeYLimpiar(string message)
+void showMessageAndClear(int tipo_mensaje, string message)
 {
-    cout << message << std::endl;
-    this_thread::sleep_for(chrono::seconds(5));
-    ClearConsole();
+    //0 : selección de estatuilla
+    //1 : 
+    switch(tipo_mensaje){
+        case 0:
+            cout << message << std::endl;
+            this_thread::sleep_for(chrono::seconds(5));
+            ClearConsole();
+            break;
+        default:
+            break;
+    }
 }
 
 #endif

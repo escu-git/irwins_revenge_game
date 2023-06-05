@@ -15,7 +15,6 @@ using namespace std;
         //Selección:
         cout << "JUGADOR " << player << " - " << player_name <<endl;
        
-
         //Cargamos el array temporal con las estatuillas disponibles:
         for(i; i < estatuillas_totales; i++ ){
             if(estatuillas_disponibles[i] != ""){
@@ -24,18 +23,20 @@ using namespace std;
                 temp++;
             }
         }
+
         //Selecciona y muestra estatuilla:
         cout << "Selecciona la estatuilla por la que jugarás: " <<endl<<endl;
         cin >> estatuilla_seleccionada;
         cout << "Seleccionaste " << listado_seleccion_temp[estatuilla_seleccionada] <<endl <<endl;
         cout << "###################" <<endl <<endl;;
 
-
-        return listado_seleccion_temp[estatuilla_seleccionada-1];
+        //Retornamos la estatuilla que fue seleccionada:
+        return listado_seleccion_temp[estatuilla_seleccionada];
     }
 
 
-#pragma endregion
+    
 
+#pragma endregion
 
 #endif
