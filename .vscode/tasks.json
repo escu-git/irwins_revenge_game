@@ -3,12 +3,12 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "game compiler",
+			"label": "build game",
 			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
-				"${fileDirname}/*.cpp",
+				"${fileDirname}\\*.cpp",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],
