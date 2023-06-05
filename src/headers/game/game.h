@@ -44,7 +44,7 @@ void game(){
 
 #pragma endregion
 
-    //LANZAMIENTO DADOS:
+//LANZAMIENTO DADOS:
 #pragma region VARIABLES_DADOS
 
 #pragma endregion
@@ -65,8 +65,12 @@ void game(){
     string mensaje2 = player2_name +" (" + selected_estatuilla_player2+")";
 
     mostrarMensajeYLimpiar(mensaje1+mensaje2);
+
+//ENFRENTAMIENTO POR ESTATUILLAS:
     
-    }while(fase_expedicion)
+    
+
+    }while(fase_expedicion);
 
 #pragma endregion
 }
