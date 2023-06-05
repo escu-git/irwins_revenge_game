@@ -1,5 +1,5 @@
 # Irwin's Revenge
-##Juego de consola Irwin's Revenge. Segundo parcial de la carrera Tecnicatura Universitaria en Programación, UTN.
+##Juego de consola Irwin's Revenge. Segundo parcial de la materia Laboratorio de Computación I (Tecnicatura Universitaria en Programación, UTN).
 
 Irwin's Revenge es un juego de dados de dos jugadores en el que intervienen el azar y la astucia.
 El objetivo general del juego es ganar la Fase Final y sumar la mayor cantidad de puntos de victoria. 
